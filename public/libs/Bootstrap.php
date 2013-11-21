@@ -116,12 +116,12 @@ class Bootstrap {
 
         // Определяем что загружать
         switch ($length) {
-            case 3:
+            case 2:
                 //Controller->Method(Param1, Param2)
                 $this->_controller->{$this->_url[1]}($this->_url[2]);
                 break;
 
-            case 2:
+            case 1:
                 //Controller->Method(Param1, Param2)
                 $this->_controller->{$this->_url[1]}();
                 break;
